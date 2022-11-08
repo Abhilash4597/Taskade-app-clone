@@ -1,0 +1,215 @@
+* {
+    background-color: var(--black_color);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --white_color: white;
+    --black_color: #050505;
+    --yellow_color: #fadb5f;
+    --background_grey_color: #17191c;
+    --hover_button_color: #e7c63f;
+    --background_color_opacity: #050505a9;
+    --background_color_opacity_ancor: #05050500;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    padding: 0.2rem 2.5rem 10rem 2.5rem;
+    padding-bottom: 1rem;
+    color: var(--black_color);
+    background-color: var(--yellow_color);
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: var(--hover_button_color);
+}
+
+.heading {
+    background-color: var(--background_color_opacity);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.logo_and_links {
+    background-color: var(--background_color_opacity_ancor);
+}
+
+.logo_and_links img {
+    width: 18rem;
+}
+
+.logo_and_links ul {
+    list-style: none;
+    margin-left: 5rem;
+    background-color: var(--background_color_opacity_ancor);
+}
+
+.logo_and_links li {
+    margin-left: 3rem;
+    font-size: 2.1rem;
+    background-color: var(--background_color_opacity_ancor);
+}
+
+.logo_and_links li a {
+    text-decoration: none;
+    background-color: var(--background_color_opacity_ancor);
+    color: var(--white_color);
+}
+
+.rightside_heading {
+    margin-right: 1rem;
+    background-color: var(--background_color_opacity_ancor);
+}
+
+.rightside_heading i {
+    color: var(--white_color);
+    font-size: 3rem;
+    margin-left: 1rem;
+    display: none;
+    /* padding-top: 1rem; */
+}
+
+.rightside_heading .login {
+    color: var(--white_color);
+    border: 1px solid var(--white_color);
+    background-color: var(--background_color_opacity_ancor);
+}
+
+header {
+    /* border: 1px solid red; */
+}
+
+.main_content {
+    /* border: 1px solid green; */
+    margin-top: 15rem;
+    flex-wrap: wrap;
+}
+
+.main_content .left_content {
+    /* border: 1px solid brown; */
+    width: 30%;
+    margin-left: 5rem;
+}
+
+.main_content .left_content h1 {
+    font-size: 7rem;
+    color: var(--white_color);
+}
+
+.main_content .left_content p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    color: var(--white_color);
+}
+
+.main_content .left_content .email_button {
+    /* border: 1px solid black; */
+    margin-top: 5rem;
+    border-radius: 25rem;
+    padding: .5rem;
+    background-color: var(--background_grey_color);
+
+}
+
+.main_content .left_content .email_button i {
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: var(--white_color);
+}
+
+.main_content .left_content input {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    padding: .2rem;
+    margin-left: 1.5rem;
+    background-color: var(--background_grey_color);
+    color: var(--white_color);
+}
+
+.left_content .email_button button {
+    padding: .6rem 1.5rem;
+    border-radius: 25rem;
+    font-size: 1.5rem;
+    color: var(--black_color);
+}
+
+.banner {
+    width: 60%;
+    /* border: 1px solid darkslategray; */
+}
+
+.banner img {
+    width: 90%;
+    margin-left: 4rem;
+    /* border: 1px solid pink; */
+}
+
+
+@media only screen and (min-width:510px) and (max-width:950px){
+
+    html {
+        font-size: 55%;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .rightside_heading .login {
+        display: none;
+    }
+
+    .rightside_heading i {
+        display: inline;
+    }
+    
+    .main_content {
+        flex-direction: column;
+        /* width: 100%; */
+    }
+
+    .main_content .left_content {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .email_button {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .banner {
+        width: 90%;
+        margin: 10rem auto;
+    }
+}
+
