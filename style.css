@@ -163,7 +163,24 @@ header {
 
 .banner {
     width: 60%;
+    animation-name: up_down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: all .3s;
     /* border: 1px solid darkslategray; */
+}
+
+@keyframes up_down {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 .banner img {
